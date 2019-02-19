@@ -28,6 +28,7 @@
         echo ("$hw".PHP_EOL."$hw".PHP_EOL."$hw");
         divide(3);
 
+
         for ($i=0;$i<3;$i++)
         {
             hw();
