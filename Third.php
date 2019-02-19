@@ -39,6 +39,7 @@
         $exClass->somePlace();
         $exClass::stFriday(2015);
 
+
     ?>
 </body>
 </html>
