@@ -5,10 +5,11 @@
 <body>
     <?php
         require __DIR__.DIRECTORY_SEPARATOR."first.php";
-
+        $count = 1;
         function divide($num)
         {
-            echo ("****************$num TASK****************");
+            echo ("****************$num TASK****************".PHP_EOL);
+            return $num++;
         }
         function hw(){
             echo ("Hello world!");
@@ -19,34 +20,34 @@
         $hw = "Hello world";
         $someArr = ["nope","nope again","Hello world","nope too"];
 
-        divide(1);
+        divide($count);
         echo ("Hello world!");
         echo ("Hello world!");
         echo ("Hello world!");
-        divide(2);
+        divide($count);
 
         echo ("$hw".PHP_EOL."$hw".PHP_EOL."$hw");
-        divide(3);
+        divide($count);
 
 
         for ($i=0;$i<3;$i++)
         {
             hw();
         }
-        divide(4);
+        divide($count);
 
 
         hwArr($someArr);
-        divide(5);
+        divide($count);
 
         echo strrev($hw);
         echo (substr($hw,1,4) + substr($hw,7));
         echo addslashes($hw);
-        divide(6);
+        divide($count);
 
         $classExample = new SomeClass();
         $classExample->RecHW($classExample->hw,$classExample->count);
-        divide(7);
+        divide($count);
 
 
 

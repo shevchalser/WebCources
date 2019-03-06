@@ -6,7 +6,7 @@
         }
         public $hw = "Hello World!";
 
-        public $count = 3;
+        public  $count = 3;
 
 
         public function RecHW($hw,$count)
